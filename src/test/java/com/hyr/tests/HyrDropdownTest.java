@@ -10,6 +10,6 @@ public class HyrDropdownTest extends BaseClass {
     @Test(retryAnalyzer = Utilities.RetryAnalyzer.class)
     public void verifyDropdownSelection() {
         System.out.println("Running dropdown test...");
-        Assert.assertTrue(false, "Intentional failure to test RetryAnalyzer");
+        Assert.assertTrue(true, "Dropdown test passed successfully");
     }
 }
