@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="HYR Tutorial Suite" parallel="tests" thread-count="2">
 
-<suite name="HYR Suite" parallel="tests" thread-count="2">
+    <listeners>
+        <listener class-name="com.hyr.listeners.ExtentListener"/>
+    </listeners>
 
-    <test name="Chrome Test">
-        <classes>
-            <class name="com.hyr.tests.HyrDropdownTest"/>
-        </classes>
-    </test>
-
-    <test name="Firefox Test">
+    <test name="HYR Dropdown Test">
         <classes>
             <class name="com.hyr.tests.HyrDropdownTest"/>
         </classes>

@@ -1,9 +1,5 @@
 package com.hyr.dataprovider;
 
-import com.hyr.dataprovider.LoginDataProvider;
-import org.testng.annotations.Test;
-import com.hyr.base.BaseClass;
-import com.hyr.pages.HyrDropdownPage;
 import org.testng.annotations.DataProvider;
 
 public class LoginDataProvider {

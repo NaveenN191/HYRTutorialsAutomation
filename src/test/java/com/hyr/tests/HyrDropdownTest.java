@@ -1,21 +1,15 @@
 package com.hyr.tests;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 import com.hyr.base.BaseClass;
-import com.hyr.pages.HyrDropdownPage;
-import com.hyr.dataprovider.LoginDataProvider;
+import Utilities.RetryAnalyzer;
 
 public class HyrDropdownTest extends BaseClass {
 
-    @Test(
-        dataProvider = "loginData",
-        dataProviderClass = LoginDataProvider.class
-    )
-    public void loginTest(String username, String password) {
-
-        System.out.println("Thread ID : " + Thread.currentThread().getId());
-        System.out.println(username + " | " + password);
-
-        // test steps here
+    @Test(retryAnalyzer = Utilities.RetryAnalyzer.class)
+    public void verifyDropdownSelection() {
+        System.out.println("Running dropdown test...");
+        Assert.assertTrue(false, "Intentional failure to test RetryAnalyzer");
     }
 }
